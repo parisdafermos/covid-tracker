@@ -1,0 +1,20 @@
+.card-div-infected {
+  min-width: none;
+  border-radius: 5px;
+}
+.card-div-infected:hover {
+  background-color: #331327;
+}
+.card-div-deaths {
+  min-width: none;
+  border-radius: 5px;
+}
+.card-div-deaths:hover {
+  background-color: #132240;
+}
+.red-font {
+  color: #eb2a50;
+}
+.blue-font {
+  color: #3182da;
+}
