@@ -2,18 +2,20 @@ import { useEffect } from "react";
 import Cards from "./components/Cards";
 import Chart from "./components/Chart";
 import CountryPicker from "./components/CountryPicker";
-import getData from "./utils/getData";
+import getTotalCountryData from "./utils/getTotalCountryData";
 const App = () => {
+  const [countryData, setCountryData] = useState(null);
   useEffect(async () => {
-    const data = await getData();
-    console.log(data);
+    const countryData = await getTotalCountryData();
+    setCountryData(countryData);
   }, []);
+
   return (
     <div>
       <h1 className="text-center fw-bold my-3"> COVID-19 TRACKER</h1>
-      <Cards />
+      <Cards countryData={countryData} />
       <CountryPicker />
-      <Chart />
+      <Chart countryData={countryData} />
     </div>
   );
 };
