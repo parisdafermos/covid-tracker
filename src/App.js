@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Cards from "./components/Cards";
 import Chart from "./components/Chart";
 import CountryPicker from "./components/CountryPicker";
