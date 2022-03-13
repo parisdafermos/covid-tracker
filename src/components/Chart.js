@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Line, Bar } from "react-chartjs-2";
 import { Chart as ChartJS } from "chart.js/auto";
-
+import "./Chart.css";
 function Chart({ countryData }) {
   console.log(countryData);
   const data = {
