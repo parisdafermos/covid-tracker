@@ -30,7 +30,9 @@ const App = () => {
           selectedCountry={selectedCountry}
           setSelectedCountry={setSelectedCountry}
         />
-        <Chart countryData={countryData} />
+        <div className="d-flex justify-content-center">
+          <Chart countryData={countryData} />
+        </div>
       </div>
     </div>
   );

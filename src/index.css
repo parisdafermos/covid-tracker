@@ -5,3 +5,6 @@
   --bs-body-color: #6c757d;
   --bs-body-font-weight: 700;
 }
+.d-flex {
+  display: flex;
+}
