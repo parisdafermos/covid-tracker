@@ -8,3 +8,8 @@
 .d-flex {
   display: flex;
 }
+
+select {
+  background-color: inherit;
+  color: #6c757d;
+}
